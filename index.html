@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Conteúdo de Qualidade</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+    
+    .login-container {
+      background: #fff;
+      width: 350px;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    
+    .login-container h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #333;
+    }
+    
+    .login-container h1 img {
+      width: 50px;
+      height: 50px;
+      background: transparent;
+    }
+    
+    .login-container p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #fff;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    
+    .login-btn:hover {
+      opacity: 0.9;
+    }
+    
+    .error-message {
+      background-color: #fdd;
+      color: #a00;
+      padding: 10px;
+      border: 1px solid #f99;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>
+      <img src="qr-code.png" alt="QR Code">
+      Bem-vindo!
+    </h1>
+    <p>Faça login para acessar um conteúdo incrível.</p>
+    <div class="error-message" id="error-message">Usuário ou senha inválidos.</div>
+    <form id="login-form">
+      <div class="input-group">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+      </div>
+      <button type="submit" class="login-btn">Entrar</button>
+    </form>
+  </div>
+  
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Impede o envio padrão do formulário
+      
+      var username = document.getElementById('username').value.trim();
+      var password = document.getElementById('password').value.trim();
+      
+      // Validação das credenciais
+      if(username === 'andre.leao' && password === '3231'){
+        alert('Login realizado com sucesso!');
+        // Opcional: redirecionar para outra página
+        // window.location.href = "projetos.html";
+      } else {
+        // Exibe a mensagem de erro
+        document.getElementById('error-message').style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

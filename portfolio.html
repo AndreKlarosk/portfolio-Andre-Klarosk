@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Projetos</title>
+  <!-- Importando a fonte Roboto do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico e definição de fonte */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 20px;
+      color: #333;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      padding: 40px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      display: center;
+      align-items: center;
+      justify-content: flex-start; 
+      gap: 10px;
+      width: 100%;
+    }
+    
+    
+    header p {
+      font-size: 1.2em;
+    }
+    
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .project {
+      background: linear-gradient(135deg, #7a84af, #9a79bb);
+      border: 2px solid #350e69;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    
+    .project h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    
+    .project a {
+      text-decoration: none;
+      color: #06090f;
+      border: 2px solid #05080e;
+      padding: 5px 2px;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+      margin: 5px;
+      display: inline-block;
+    }
+    
+    .project a:hover {
+      background: #0c0d0f;
+      color: #fff;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #faf6f6;
+    }
+
+    /* Exemplo de selo customizado do LinkedIn */
+    .linkedin-seal {
+      /* Área do “cartão” ou “selo” */
+      background-color: #1D2226; /* Cor escura semelhante ao tema dark */
+      border-radius: 8px;
+      padding: 16px;
+      max-width: 350px; /* Ajuste conforme a largura desejada */
+      margin: 20px auto 0; /* Centraliza o selo e dá margem superior */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .linkedin-seal img {
+      width: 90px;       /* Tamanho da imagem de perfil/selo */
+      height: 90px;
+      border-radius: 8px;
+      object-fit: cover; /* Ajusta a imagem ao container */
+    }
+    
+    .linkedin-seal a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .linkedin-seal a:hover {
+      text-decoration: underline;
+    }
+    
+    .linkedin-seal p {
+      color: #fff;
+      margin: 4px 0;
+      text-align: center;
+      line-height: 1.3em;
+    }
+    
+    .linkedin-seal .linkedin-button {
+      display: inline-block;
+      background-color: #0A66C2;  /* Azul padrão do LinkedIn */
+      border-radius: 4px;
+      padding: 8px 16px;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 8px;
+      font-weight: normal;
+    }
+    
+    .linkedin-seal .linkedin-button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      Meus Projetos
+    </h1>
+    <p>Confira os links dos meus projetos abaixo:</p>
+  </header>
+  
+  <div class="project-container">
+    <div class="project">
+      <h2>Registro Santa Ceia (CCB)</h2>
+      <a href="https://github.com/AndreKlarosk/ccbsantaceia" target="_blank">Acessar Código</a>
+      <a href="https://ccbsantaceia.vercel.app/" target="_blank">Acessar Projeto</a>
+    </div>
+    <div class="project">
+      <h2>Registro de Verificação (CCB)</h2>
+      <a href="https://github.com/AndreKlarosk/CriarVerificacaoCCB/tree/main" target="_blank">Acessar Código</a>
+      <a href="https://criar-verificacao-ccb.vercel.app/" target="_blank">Acessar Projeto</a>
+    </div>
+    <div class="project">
+      <h2>Projeto Painel (Unipampa)</h2>
+      <a href="https://github.com/AndreKlarosk/informativo_unipampa" target="_blank">Acessar Código</a>
+      <a href="https://informativo-unipampa.vercel.app/" target="_blank">Acessar Projeto</a>
+    </div>
+    <div class="project">
+      <h2>Projeto Estudaí (Estudos)</h2>
+      <a href="https://github.com/AndreKlarosk/estudai.v1.1/tree/main" target="_blank">Acessar Código</a>
+      <a href="https://estudai-v1-1.vercel.app/" target="_blank">Acessar Projeto</a>
+    </div>
+    <div class="project">
+      <h2>Projeto Formulário (Unipampa)</h2>
+      <a href="https://github.com/AndreKlarosk/Formul-rio" target="_blank">Acessar Código</a>
+      <a href="https://formul-rio-beryl.vercel.app/" target="_blank">Acessar Projeto</a>
+    </div>
+    <div class="project">
+      <h2>Projeto Tab Pedriódica (Unipampa)</h2>
+      <a href="https://github.com/AndreKlarosk/tabelaperiodica" target="_blank">Acessar Código</a>
+      <a href="https://tabelaperiodica-gold.vercel.app/" target="_blank">Acessar Projeto</a>
+    </div>
+    <!-- Adicione mais projetos conforme necessário -->
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+    
+    <!-- Selo customizado do LinkedIn -->
+    <div class="linkedin-seal">
+      <!-- Clique na imagem redireciona -->
+        <img src="someBadge.png" alt="André Klarosk Leão">
+      </a>
+      <!-- Clique no nome redireciona -->
+      <a href="https://www.linkedin.com/in/andr%C3%A9-klarosk-le%C3%A3o-1b344a17a" target="_blank">
+        André Klarosk Leão
+      </a>
+      <p>Dono na KlarInfo Assistência Técnica e Loja de Informática<br>
+      TecBan | Universidade Federal do Pampa</p>
+      <!-- Botão "Ver perfil" redireciona -->
+      <a href="https://www.linkedin.com/in/andr%C3%A9-klarosk-le%C3%A3o-1b344a17a" 
+         target="_blank" 
+         class="linkedin-button">
+         Ver perfil
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
